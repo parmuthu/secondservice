@@ -10,12 +10,10 @@ pipeline {
 	stages {
 
 		stage('Build'){
-			steps {
-<<<<<<< HEAD
+			steps 
+			{
 				bat "D:/apache-maven-3.6.3-bin/apache-maven-3.6.3/bin/mvn clean install -DskipTests"
-=======
-				bat "D:\\apache-maven-3.6.3-bin\\apache-maven-3.6.3\\bin\\mvn clean install -DskipTests"
->>>>>>> e0139bbf88b9c4e8c1f607465ed475a7f33a1725
+
 			}
 		}
 
