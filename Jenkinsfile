@@ -1,13 +1,7 @@
 pipeline {
 	agent any
 
-	environment {
-		MAVEN_HOME = tool 'maven'
-	}
-
-	tools {
-		jdk 'jdk17'
-	}
+	
 
 	stages {
 
