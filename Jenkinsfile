@@ -3,11 +3,15 @@ pipeline {
 
 	
 
+	tools {
+		jdk 'jdk17'
+	}
+
 	stages {
 
 		stage('Build'){
 			steps {
-				bat "mvn clean install -DskipTests"
+				bat "D:\apache-maven-3.6.3-bin\apache-maven-3.6.3\mvn clean install -DskipTests"
 			}
 		}
 
