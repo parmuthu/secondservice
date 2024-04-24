@@ -19,7 +19,7 @@ pipeline {
 
 		stage('Test'){
 			steps{
-				bat "mvn test"
+				bat "D:/apache-maven-3.6.3-bin/apache-maven-3.6.3/bin/mvn test"
 			}
 		}
 
