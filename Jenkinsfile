@@ -2,11 +2,11 @@ pipeline {
 	agent any
 
 	environment {
-		mavenHome = tool 'jenkins-maven'
+		mavenHome = tool 'maven'
 	}
 
 	tools {
-		jdk 'java-17'
+		jdk 'jdk17'
 	}
 
 	stages {
