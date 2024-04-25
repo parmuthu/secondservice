@@ -1,10 +1,6 @@
 pipeline {
 	agent any
 
-environment {
-        // Specify the Maven installation name configured in Jenkins
-        MAVEN_HOME = tool name: 'pipeline-maven', type: 'maven'
-    }
 
 	
 
@@ -17,10 +13,8 @@ environment {
 		stage('Build'){
 			steps 
 			{
-			withMaven(maven: 'pipeline-maven') {
-                    bat 'mvn clean package'
-                }
-				
+			bat "D:/apache-maven-3.6.3-bin/apache-maven-3.6.3/bin/mvn clean install -DskipTests"
+		
 
 			}
 		}
