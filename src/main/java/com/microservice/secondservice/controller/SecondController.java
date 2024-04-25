@@ -12,4 +12,8 @@ public class SecondController {
 	public String test() {
 		return "Hello from Second Service";
 	}
+	@GetMapping("/show")
+	public String display() {
+		return "Hello from Second Service";
+	}
 }
