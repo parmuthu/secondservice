@@ -10,7 +10,7 @@ public class SecondController {
 
 	@GetMapping("/message")
 	public String test() {
-		return "Hello from Second Service";
+		return "Hello from Second Service updated";
 	}
 	@GetMapping("/show")
 	public String display() {
